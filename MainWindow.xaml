@@ -1,0 +1,34 @@
+﻿<Window x:Class="UniversidadeProj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversidadeProj"
+        mc:Ignorable="d"
+       Title="Universidade" Height="200" Width="300" Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.ColumnSpan="2">
+            <Menu.Background>
+                <ImageBrush ImageSource="wall.png"/>
+            </Menu.Background>
+
+            <MenuItem Header="Cadastros" Background="White" >
+                <MenuItem Header="Universidades..." Click="UniversidadeWindow_Click" />
+                <MenuItem Header="Departamentos..." Click="DepartamentoWindow_Click" />
+                <MenuItem Header="Cursos..." Click="CursoWindow_Click" />
+            </MenuItem>
+            <MenuItem Header="Operações" Background="White" >
+                <MenuItem Header="Cadastro Departamento..." Click="CadDepWindow_Click" />
+                <MenuItem Header="Cadastro Curso..." Click="CadCursoWindow_Click" />
+                <MenuItem Header="Listar Departamento na universidade..." Click="ListDepWindow_Click" />
+                <MenuItem Header="Listar cursos no Departamento..." Click="ListCursoWindow_Click" />
+            </MenuItem>
+
+        </Menu>
+      
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="UniversidadeProj.ListCurso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversidadeProj"
+        mc:Ignorable="d"
+        Title="ListCurso" Height="270" Width="400">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="wall.png"/>
+        </Grid.Background>
+        <ListBox Name="ListCursos" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Width="370" Height="90" />
+        <ListBox x:Name="ListDepartamentos" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,119,0,0" Width="370" Height="90" />
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="172,214,0,0" VerticalAlignment="Top" Background="White" FontFamily="Bodoni MT" Height="25" Width="46"/>
+    </Grid>
+</Window>

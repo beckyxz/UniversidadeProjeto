@@ -1,0 +1,19 @@
+﻿<Window x:Class="UniversidadeProj.CadCurso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversidadeProj"
+        mc:Ignorable="d"
+         Title="Cadastrar Curso no Departamento" Height="270" Width="400">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="wall.png"/>
+        </Grid.Background>
+
+        <ListBox Name="listCursos" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="27,19,0,0" Width="161" Height="173"/>
+        <ListBox Name="listDepartamentos" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="214,19,0,0" Width="161" Height="173"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="128,218,0,0" VerticalAlignment="Top" Background="White" FontFamily="Bodoni MT" FontSize="14" Height="24" Width="60" RenderTransformOrigin="0.383,0.418"/>
+        <Button Click="CadastrarClick" Content="Cadastrar" HorizontalAlignment="Left" Margin="214,218,0,0" VerticalAlignment="Top" Background="White" FontFamily="Bodoni MT" FontSize="14" Height="24" Width="70"/>
+    </Grid>
+</Window>

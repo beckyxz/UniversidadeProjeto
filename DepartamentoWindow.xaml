@@ -1,0 +1,30 @@
+﻿<Window x:Class="UniversidadeProj.DepartamentoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversidadeProj"
+        mc:Ignorable="d"
+        Title="Cadastro de Departamento " Height="180" Width="459">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/wall.png"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Bodoni MT" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.473,1.027" Foreground="White" FontFamily="Bodoni MT" Text="Departamento" Height="18" Width="88" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Bodoni MT" FontSize="14"><Run Language="pt-br" Text="Setor"/></TextBlock>
+        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBox Name="txtDepartamento" HorizontalAlignment="Left" Margin="10,80,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <TextBox Name="txtSetor" HorizontalAlignment="Left" Margin="10,127,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.821,-1.672" FontFamily="Bodoni MT" Background="White" Height="20" Width="59" Grid.Column="1"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="83,28,0,0" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="-0.045,0.655" FontFamily="Bodoni MT" Background="White" Height="20" Width="46"/>
+        <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="140,29,0,0" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="0.066,0.568" FontFamily="Bodoni MT" Background="White" Height="20" Width="75"/>
+        <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="226,28,0,0" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="0.199,0.745" FontFamily="Bodoni MT" Background="White" Height="20" Width="64"/>
+        <ListBox Name="listDepartamentos" Margin="5,62,10,19" SelectionChanged="ListDepartamentos_SelectionChanged" Grid.Column="1" />
+    </Grid>
+</Window>
